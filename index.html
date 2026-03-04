@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/pc/Downloads/landing-page-francerenov.html -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
+<title>Pompe à Chaleur à 1€ - France Renov</title>
+<link href="./index_files/css2" rel="stylesheet">
+<style>
+:root { color-scheme: light only; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { background:#ffffff !important; color:#1a2e22 !important; }
+body { font-family:'Inter',sans-serif; background:#ffffff; color:#1a2e22; overflow-x:hidden; }
+
+/* ── STICKY CTA MOBILE ── */
+.sticky-cta {
+  position:fixed; bottom:0; left:0; right:0; z-index:998;
+  background:#1d6f42;
+  padding:12px 20px;
+  display:flex; align-items:center; justify-content:space-between; gap:10px;
+  box-shadow:0 -4px 20px rgba(29,111,66,0.25);
+}
+.sticky-cta a.sticky-btn {
+  flex:1; background:#f5c542; color:#1a2e22;
+  padding:13px 16px; border-radius:100px;
+  font-size:14px; font-weight:700;
+  text-decoration:none; text-align:center; white-space:nowrap;
+}
+.sticky-cta a.sticky-call {
+  background:rgba(255,255,255,0.15); color:#ffffff;
+  padding:13px 16px; border-radius:100px;
+  font-size:14px; font-weight:700;
+  text-decoration:none; white-space:nowrap; border:1px solid rgba(255,255,255,0.3);
+}
+
+/* ── NAVBAR ── */
+.navbar {
+  position:fixed; top:0; left:0; right:0; z-index:999;
+  background:#ffffff; border-bottom:2px solid #d4ead9;
+  padding:11px 20px;
+  display:flex; align-items:center; justify-content:space-between; gap:8px;
+  flex-wrap:wrap;
+}
+.logo { font-family:'Playfair Display',serif; font-size:19px; font-weight:700; color:#1d6f42; }
+.logo span { color:#c97a0a; }
+.nav-phone {
+  display:flex; align-items:center; gap:6px;
+  background:#f0f9f3; border:1px solid #a8d8b8;
+  color:#1d6f42; font-size:14px; font-weight:700;
+  padding:8px 14px; border-radius:100px; text-decoration:none;
+}
+.nav-btn { background:#1d6f42; color:#ffffff; padding:10px 16px; border-radius:100px; font-size:13px; font-weight:700; text-decoration:none; white-space:nowrap; }
+
+/* ── HERO ── */
+.hero { background:linear-gradient(160deg,#f0f9f3 0%,#e6f4ea 100%); padding:90px 20px 50px; text-align:center; }
+.hero-label { display:inline-flex; align-items:center; gap:7px; background:#ffffff; border:1px solid #a8d8b8; color:#1d6f42; font-size:11px; font-weight:700; letter-spacing:2px; text-transform:uppercase; padding:7px 16px; border-radius:100px; margin-bottom:18px; }
+.dot { width:7px; height:7px; background:#1d6f42; border-radius:50%; display:inline-block; animation:blink 2s infinite; }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+.hero h1 { font-family:'Playfair Display',serif; font-size:clamp(26px,5.5vw,52px); font-weight:900; line-height:1.15; color:#1a2e22; margin-bottom:12px; }
+.hero h1 strong { color:#1d6f42; }
+.hero-sub { font-size:16px; color:#3a5a44; max-width:480px; margin:0 auto 12px; line-height:1.7; }
+
+.hero-clarif {
+  font-size:13px; color:#7a4f00;
+  background:#fffbea; border:1px solid #f5e070; border-radius:10px;
+  padding:10px 16px; max-width:480px; margin:0 auto 24px; line-height:1.6; text-align:left;
+}
+.hero-clarif strong { color:#c97a0a; }
+
+.hero-cta-big {
+  display:inline-block; background:#1d6f42; color:#ffffff;
+  padding:17px 36px; border-radius:100px;
+  font-size:16px; font-weight:700; text-decoration:none;
+  box-shadow:0 8px 28px rgba(29,111,66,0.35); margin-bottom:10px;
+}
+.hero-subcta { display:flex; align-items:center; justify-content:center; gap:16px; flex-wrap:wrap; margin-top:12px; }
+.hero-subcta a { font-size:14px; color:#1d6f42; font-weight:600; text-decoration:none; display:flex; align-items:center; gap:5px; }
+.hero-note { font-size:12px; color:#6a8a72; margin-top:10px; display:block; }
+
+/* TRUST BADGES */
+.trust-badges { display:flex; justify-content:center; flex-wrap:wrap; gap:10px; margin:20px auto 0; max-width:500px; }
+.trust-badge { display:flex; align-items:center; gap:6px; background:#ffffff; border:1px solid #d4ead9; border-radius:100px; padding:7px 14px; font-size:12px; font-weight:600; color:#1a2e22; }
+.trust-badge span { font-size:14px; }
+
+/* HERO VISUAL */
+.hero-visual { max-width:640px; margin:30px auto 0; background:#ffffff; border-radius:18px; box-shadow:0 14px 44px rgba(29,111,66,0.11); overflow:hidden; border:2px solid #d4ead9; }
+.hero-visual svg { display:block; width:100%; }
+
+/* STATS */
+.stats { background:#1d6f42; padding:34px 20px; display:flex; justify-content:space-around; flex-wrap:wrap; gap:18px; }
+.stat { text-align:center; }
+.stat-num { font-family:'Playfair Display',serif; font-size:38px; font-weight:900; color:#ffffff; line-height:1; margin-bottom:5px; }
+.stat-num .acc { color:#f5c542; }
+.stat-label { font-size:12px; color:rgba(255,255,255,0.8); }
+
+/* SECTIONS */
+.eyebrow { text-align:center; color:#1d6f42; font-size:11px; font-weight:700; letter-spacing:3px; text-transform:uppercase; margin-bottom:10px; }
+.h2 { font-family:'Playfair Display',serif; font-size:clamp(22px,4vw,36px); font-weight:900; text-align:center; color:#1a2e22; margin-bottom:8px; line-height:1.2; }
+.sub { text-align:center; color:#4a6357; font-size:15px; margin-bottom:38px; }
+
+/* STEPS */
+.how { background:#ffffff; padding:58px 20px; }
+.how-inner { max-width:860px; margin:0 auto; }
+.steps-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; }
+.step-card { background:#f5faf7; border:1px solid #d4ead9; border-radius:18px; padding:24px 18px; text-align:center; }
+.step-num { width:48px; height:48px; background:#1d6f42; color:#ffffff; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Playfair Display',serif; font-size:22px; font-weight:900; margin:0 auto 13px; }
+.step-card h4 { font-size:15px; font-weight:700; color:#1a2e22; margin-bottom:7px; }
+.step-card p { font-size:13px; color:#4a6357; line-height:1.6; }
+
+/* CONDITIONS */
+.conditions { background:#1d6f42; padding:58px 20px; }
+.cond-inner { max-width:700px; margin:0 auto; text-align:center; }
+.cond-inner .eyebrow { color:#a8e6c0; }
+.cond-inner .h2 { color:#ffffff; margin-bottom:30px; }
+.cond-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:12px; text-align:left; }
+.cond-item { background:rgba(255,255,255,0.13); border:1px solid rgba(255,255,255,0.2); border-radius:12px; padding:15px 18px; display:flex; align-items:center; gap:12px; color:#ffffff; font-size:15px; font-weight:500; }
+.cond-icon { width:28px; height:28px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:700; flex-shrink:0; }
+
+/* PROOF */
+.proof { background:#f5faf7; padding:58px 20px; }
+.proof-inner { max-width:860px; margin:0 auto; }
+.proof-stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:14px; margin-bottom:40px; }
+.proof-stat { background:#1d6f42; border-radius:16px; padding:22px 18px; text-align:center; }
+.proof-stat-num { font-family:'Playfair Display',serif; font-size:34px; font-weight:900; color:#ffffff; margin-bottom:4px; }
+.proof-stat-num span { color:#f5c542; }
+.proof-stat-label { font-size:12px; color:rgba(255,255,255,0.85); }
+.testimonials { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px; }
+.testi { background:#ffffff; border:1px solid #d4ead9; border-radius:16px; padding:22px 18px; }
+.stars { color:#f5c542; font-size:15px; margin-bottom:9px; letter-spacing:2px; }
+.testi-text { font-size:13px; color:#2a3e30; line-height:1.7; margin-bottom:12px; font-style:italic; }
+.testi-author { display:flex; align-items:center; gap:9px; }
+.testi-avatar { width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; color:#ffffff; flex-shrink:0; }
+.testi-name { font-size:13px; font-weight:600; color:#1a2e22; }
+.testi-loc { font-size:11px; color:#6a8a72; }
+
+/* FORM */
+.form-section { background:#ffffff; padding:58px 20px 90px; }
+.form-container { max-width:680px; margin:0 auto; }
+.form-card { background:#ffffff; border:2px solid #d4ead9; border-radius:22px; overflow:hidden; box-shadow:0 12px 50px rgba(29,111,66,0.09); }
+.form-card-header { background:#1d6f42; padding:20px 24px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+.fch-left { display:flex; align-items:center; gap:12px; }
+.fch-icon { width:42px; height:42px; background:rgba(255,255,255,0.2); border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:18px; flex-shrink:0; }
+.form-card-header h3 { font-family:'Playfair Display',serif; font-size:16px; font-weight:700; color:#ffffff; margin-bottom:2px; }
+.form-card-header p { font-size:12px; color:rgba(255,255,255,0.8); }
+.form-badge { background:rgba(255,255,255,0.2); border:1px solid rgba(255,255,255,0.35); color:#ffffff; font-size:12px; font-weight:600; padding:6px 13px; border-radius:100px; white-space:nowrap; }
+.form-body { padding:8px; background:#ffffff; }
+.form-body iframe { width:100%; border:none; min-height:680px; border-radius:14px; display:block; }
+
+/* REASSURANCE */
+.reassurance { background:#f5faf7; padding:58px 20px; }
+.reassurance-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:16px; max-width:860px; margin:38px auto 0; }
+.reassurance-card { background:#ffffff; border:1px solid #d4ead9; border-top:4px solid #1d6f42; border-radius:16px; padding:22px 16px; text-align:center; }
+.r-icon { width:48px; height:48px; background:#1d6f42; color:#ffffff; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; margin:0 auto 12px; }
+.reassurance-card h4 { font-size:14px; font-weight:700; color:#1a2e22; margin-bottom:6px; }
+.reassurance-card p { font-size:12px; color:#4a6357; line-height:1.6; }
+
+/* PHONE BANNER */
+.phone-banner { background:#fffbea; border-top:1px solid #f5e070; border-bottom:1px solid #f5e070; padding:18px 20px; text-align:center; }
+.phone-banner p { font-size:14px; color:#7a4f00; font-weight:600; margin-bottom:4px; }
+.phone-banner a { color:#1d6f42; font-size:22px; font-weight:700; text-decoration:none; }
+
+/* FOOTER */
+footer { background:#0f1f15; color:rgba(255,255,255,0.55); text-align:center; padding:26px 20px 80px; font-size:12px; line-height:1.8; }
+footer a { color:#6ec98a; text-decoration:none; }
+
+@media (max-width:480px) {
+  .nav-phone { display:none; }
+  .nav-btn { font-size:12px; padding:9px 12px; }
+  .sticky-cta { padding:10px 14px; }
+  .sticky-cta a { font-size:13px; padding:11px 12px; }
+}
+</style>
+</head>
+<body>
+
+<!-- STICKY CTA MOBILE -->
+<div class="sticky-cta">
+  <a href="file:///C:/Users/pc/Downloads/landing-page-francerenov.html#formulaire" class="sticky-btn">👉 Oui je veux mon éligibilité en 30s</a>
+  <a href="tel:0744303670" class="sticky-call">📞 Appeler</a>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">France<span>Renov</span></div>
+  <a href="tel:0744303670" class="nav-phone">📞 07 44 30 36 70</a>
+  <a href="file:///C:/Users/pc/Downloads/landing-page-francerenov.html#formulaire" class="nav-btn">Vérifier mes aides</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-label"><span class="dot"></span> Programme officiel CEE 2025</div>
+
+  <h1>Pompe à chaleur financée<br><strong>jusqu’à 100%</strong> grâce aux<br>aides de l’État (CEE)</h1>
+
+  <p class="hero-sub">Testez votre éligibilité gratuitement en 30 secondes.<br>Vous ne payez que <strong>1€ symbolique</strong> si votre dossier est validé par nos experts.</p>
+
+
+
+  <a href="file:///C:/Users/pc/Downloads/landing-page-francerenov.html#formulaire" class="hero-cta-big">👉 Oui je veux mon éligibilité à 1€ en 30s</a>
+
+  <div class="hero-subcta">
+    <a href="tel:0744303670">📞 Je souhaite être contacté au 07 44 30 36 70</a>
+  </div>
+  <span class="hero-note">Gratuit • Sans engagement • Réponse sous 24h</span>
+
+  <div class="trust-badges">
+    <div class="trust-badge"><span>✓</span> Artisans certifiés RGE</div>
+    <div class="trust-badge"><span>🔒</span> Données protégées RGPD</div>
+    <div class="trust-badge"><span>★</span> 4,8/5 clients satisfaits</div>
+  </div>
+
+  <div class="hero-visual">
+    <svg viewBox="0 0 640 270" xmlns="http://www.w3.org/2000/svg" style="background:#e8f5ee;">
+      <rect width="640" height="270" fill="#e8f5ee"></rect>
+      <circle cx="570" cy="50" r="34" fill="#f5c542" opacity="0.7"></circle>
+      <ellipse cx="105" cy="50" rx="50" ry="19" fill="#ffffff" opacity="0.8"></ellipse>
+      <ellipse cx="142" cy="44" rx="34" ry="15" fill="#ffffff" opacity="0.9"></ellipse>
+      <rect y="193" width="640" height="77" fill="#c8e6c9"></rect>
+      <rect x="120" y="110" width="248" height="90" rx="4" fill="#ffffff" stroke="#b8ddc8" stroke-width="2"></rect>
+      <polygon points="106,112 244,36 382,112" fill="#1d6f42"></polygon>
+      <rect x="215" y="155" width="46" height="45" rx="4" fill="#1d6f42" opacity="0.8"></rect>
+      <circle cx="253" cy="180" r="3" fill="#f5c542"></circle>
+      <rect x="138" y="130" width="48" height="40" rx="3" fill="#b3e5fc" stroke="#b8ddc8" stroke-width="1.5"></rect>
+      <line x1="162" y1="130" x2="162" y2="170" stroke="#b8ddc8" stroke-width="1.5"></line>
+      <line x1="138" y1="150" x2="186" y2="150" stroke="#b8ddc8" stroke-width="1.5"></line>
+      <rect x="300" y="130" width="48" height="40" rx="3" fill="#b3e5fc" stroke="#b8ddc8" stroke-width="1.5"></rect>
+      <line x1="324" y1="130" x2="324" y2="170" stroke="#b8ddc8" stroke-width="1.5"></line>
+      <line x1="300" y1="150" x2="348" y2="150" stroke="#b8ddc8" stroke-width="1.5"></line>
+      <rect x="326" y="50" width="19" height="42" fill="#c0392b" rx="2"></rect>
+      <rect x="396" y="163" width="75" height="50" rx="8" fill="#eceff1" stroke="#90a4ae" stroke-width="2"></rect>
+      <rect x="404" y="170" width="59" height="34" rx="5" fill="#b0bec5"></rect>
+      <circle cx="433" cy="187" r="12" fill="#78909c" stroke="#90a4ae" stroke-width="1.5"></circle>
+      <circle cx="433" cy="187" r="6" fill="#90a4ae"></circle>
+      <rect x="460" y="174" width="8" height="24" rx="2" fill="#90a4ae" opacity="0.5"></rect>
+      <rect x="384" y="144" width="99" height="17" rx="6" fill="#1d6f42"></rect>
+      <text x="433" y="156" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" font-weight="700" fill="#ffffff">POMPE À CHALEUR</text>
+      <circle cx="530" cy="152" r="14" fill="#ffcc80"></circle>
+      <rect x="519" y="167" width="21" height="34" rx="5" fill="#1565c0"></rect>
+      <rect x="516" y="198" width="8" height="17" rx="3" fill="#1565c0"></rect>
+      <rect x="531" y="198" width="8" height="17" rx="3" fill="#1565c0"></rect>
+      <circle cx="565" cy="155" r="12" fill="#ffcc80"></circle>
+      <ellipse cx="565" cy="175" rx="11" ry="19" fill="#e91e63" opacity="0.8"></ellipse>
+      <rect x="559" y="191" width="6" height="16" rx="3" fill="#880e4f"></rect>
+      <rect x="569" y="191" width="6" height="16" rx="3" fill="#880e4f"></rect>
+      <circle cx="548" cy="172" r="8" fill="#ffcc80"></circle>
+      <rect x="541" y="181" width="13" height="19" rx="4" fill="#66bb6a"></rect>
+      <text x="498" y="127" font-family="Inter,sans-serif" font-size="10" font-weight="700" fill="#1d6f42">★ -70% sur la facture</text>
+      <circle cx="75" cy="190" r="24" fill="#4caf50" opacity="0.7"></circle>
+      <rect x="71" y="190" width="7" height="22" fill="#795548"></rect>
+      <circle cx="593" cy="186" r="21" fill="#4caf50" opacity="0.6"></circle>
+      <rect x="589" y="186" width="7" height="22" fill="#795548"></rect>
+    </svg>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat"><div class="stat-num">+2800<span class="acc"></span></div><div class="stat-label">dossiers validés</div></div>
+  <div class="stat"><div class="stat-num">70<span class="acc">%</span></div><div class="stat-label">d’économies sur facture</div></div>
+  <div class="stat"><div class="stat-num">9 800<span class="acc">€</span></div><div class="stat-label">d’aides en moyenne</div></div>
+  <div class="stat"><div class="stat-num">4.8<span class="acc">★</span></div><div class="stat-label">note satisfaction</div></div>
+</div>
+
+<!-- SECTION 2 – COMMENT CA MARCHE -->
+<section class="how">
+  <div class="how-inner">
+    <p class="eyebrow">Processus</p>
+    <h2 class="h2">Comment ça marche ?</h2>
+    <p class="sub">3 étapes simples pour profiter de votre pompe à chaleur</p>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h4>Vérification d’éligibilité</h4>
+        <p>Remplissez notre formulaire en 30 secondes. Nous vérifions vos droits aux aides CEE et MaPrimeRénov’ selon votre profil.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h4>Validation avec un expert</h4>
+        <p>Un conseiller certifié vous rappelle sous 24h pour valider votre dossier et organiser la visite technique gratuite.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h4>Installation certifiée</h4>
+        <p>Un artisan RGE certifié installe votre pompe à chaleur. Votre reste à charge est réduit au maximum selon vos aides.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 – CONDITIONS -->
+<section class="conditions">
+  <div class="cond-inner">
+    <p class="eyebrow">Éligibilité</p>
+    <h2 class="h2">Êtes-vous concerné ?</h2>
+    <div class="cond-grid">
+      <div class="cond-item"><div class="cond-icon">✓</div>Vous êtes <strong style="margin-left:5px">propriétaire</strong></div>
+      <div class="cond-item"><div class="cond-icon">✓</div><strong>Maison individuelle</strong></div>
+      <div class="cond-item"><div class="cond-icon">✓</div>Chauffage <strong style="margin-left:5px">fioul ou gaz</strong></div>
+      <div class="cond-item"><div class="cond-icon">✓</div>Construction <strong style="margin-left:5px">&gt; 2 ans</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- PREUVE SOCIALE -->
+<section class="proof">
+  <div class="proof-inner">
+    <p class="eyebrow">Témoignages</p>
+    <h2 class="h2">Ils ont déjà bénéficié du dispositif</h2>
+    <p class="sub">Plus de 2 800 dossiers validés en France</p>
+    <div class="proof-stats">
+      <div class="proof-stat"><div class="proof-stat-num">2 800<span>+</span></div><div class="proof-stat-label">Dossiers validés</div></div>
+      <div class="proof-stat"><div class="proof-stat-num">9 800<span>€</span></div><div class="proof-stat-label">Montant moyen des aides</div></div>
+      <div class="proof-stat"><div class="proof-stat-num">4.8<span>/5</span></div><div class="proof-stat-label">Note moyenne satisfaction</div></div>
+    </div>
+    <div class="testimonials">
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">« J’étais sceptique au début, mais tout s’est passé exactement comme promis. Mon reste à charge a été de 1€. Je recommande vivement ! »</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#1d6f42;">M</div>
+          <div><div class="testi-name">Michel D.</div><div class="testi-loc">Propriétaire — Normandie</div></div>
+        </div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">« Notre facture est passée de 280€ à 85€/mois. Le conseiller nous a accompagnés du début à la fin. Merci ! »</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#c97a0a;">S</div>
+          <div><div class="testi-name">Sylvie &amp; Jean-Paul R.</div><div class="testi-loc">Propriétaires — Bretagne</div></div>
+        </div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">« Dossier validé en 48h, installation faite 3 semaines après. Très professionnel et transparent. Je n’aurais jamais fait ça sans eux. »</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#1565c0;">F</div>
+          <div><div class="testi-name">Françoise L.</div><div class="testi-loc">Propriétaire — Pays de la Loire</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 – FORMULAIRE -->
+<section class="form-section" id="formulaire">
+  <div class="form-container">
+    <p class="eyebrow">Formulaire</p>
+    <h2 class="h2">Voir si j’ai droit<br>à 100% des aides</h2>
+    <p class="sub">Gratuit et sans engagement — Réponse sous 24h</p>
+    <div class="form-card">
+      <div class="form-card-header">
+        <div class="fch-left">
+          <div class="fch-icon">✎</div>
+          <div>
+            <h3>Demande de rappel gratuit</h3>
+            <p>Gratuit • Sans engagement • RGPD</p>
+          </div>
+        </div>
+        <div class="form-badge">📞 Rappel sous 24h</div>
+      </div>
+      <div class="form-body" style="padding:40px 24px; text-align:center;">
+        <p style="font-size:16px; color:#4a6357; margin-bottom:28px; line-height:1.7;">Cliquez ci-dessous pour accéder au formulaire.<br>Cela prend moins de <strong>30 secondes</strong>.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeCzJOO9k9Pxam4D6yk37yZGLSZOvqx1IpBHGBFtQ1esEatdA/viewform" target="_blank" style="display:inline-block; background:#1d6f42; color:#ffffff; padding:18px 44px; border-radius:100px; font-size:17px; font-weight:700; text-decoration:none; box-shadow:0 8px 28px rgba(29,111,66,0.35); margin-bottom:16px;">👉 Je souhaite être rappelé</a>
+        <br>
+        <p style="font-size:13px; color:#7a9084; margin-top:12px;">🔒 Données protégées • Gratuit • Sans engagement</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5 – RASSURANCE -->
+<section class="reassurance">
+  <p class="eyebrow">Nos garanties</p>
+  <h2 class="h2">Vous êtes entre de bonnes mains</h2>
+  <div class="reassurance-grid">
+    <div class="reassurance-card"><div class="r-icon">RGE</div><h4>Installateur certifié RGE</h4><p>Tous nos partenaires sont certifiés RGE, condition obligatoire pour les aides de l’État</p></div>
+    <div class="reassurance-card"><div class="r-icon">CEE</div><h4>Conforme dispositif CEE</h4><p>Notre procédure est 100% conforme au dispositif des Certificats d’Économies d’Énergie</p></div>
+    <div class="reassurance-card"><div class="r-icon" style="font-size:17px;">🔒</div><h4>Données protégées RGPD</h4><p>Vos informations sont protégées conformément au RGPD et ne sont jamais revendues</p></div>
+    <div class="reassurance-card"><div class="r-icon">A-Z</div><h4>Accompagnement administratif</h4><p>Notre équipe gère toutes vos démarches de A à Z, sans frais supplémentaires</p></div>
+  </div>
+</section>
+
+<!-- PHONE BANNER -->
+<div class="phone-banner">
+  <p>Vous préférez nous appeler directement ?</p>
+  <a href="tel:0744303670">📞 07 44 30 36 70</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 France Renov — <a href="file:///C:/Users/pc/Downloads/landing-page-francerenov.html#">Mentions légales</a> — <a href="file:///C:/Users/pc/Downloads/landing-page-francerenov.html#">Politique de confidentialité</a> — <a href="file:///C:/Users/pc/Downloads/landing-page-francerenov.html#">RGPD</a></p>
+  <p style="margin-top:6px">France Renov est un service indépendant de mise en relation. Les aides dépendent de votre profil fiscal et sont soumises aux conditions du dispositif MaPrimeRénov’ et CEE.</p>
+  <p style="margin-top:6px;color:rgba(255,255,255,0.3)">Données personnelles protégées — Conformité RGPD</p>
+</footer>
+
+
+
+</body></html>
